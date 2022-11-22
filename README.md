@@ -2,19 +2,16 @@
 ## Installation
 please check [INSTALL.md](INSTALL.md) for installation instructions
 
-## Generation data
 
+## Some instructions
+
+The code architecture is similar with mmdet. Due to this is the benchmark for SAF-FCOS. We mainly change 
+configs file and dataset file.
+
+The change configs file can be checked at [config-file](configs/WaterScene/fcos_imprv_R_50_FPN_FUSION.yaml)
+
+THe dataset file can be checked at [dataset](fcos_core/data/datasets/waterScene.py)
  
-1. Cover the radar pcd file as image
-```shell
-cd your_repositroy
-python tool/waterScene/convert_radar_point.py --dataroot your_dataset_location
-```
-
-2 generate the norm infor of radar images.
-```shell
-python tool/waterScene/generate_2d_coco_pc_norm_info.py --dataroot your_dataset_location
-```
 
 ## Training
 ```shell
